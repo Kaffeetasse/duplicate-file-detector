@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{A33473FC-8C2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NtfsReader", "lib\NtfsReader\NtfsReader.csproj", "{DBACEFC5-0234-4317-B096-F212ECAE1DD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "src\UnitTests\UnitTests.csproj", "{86C51B2B-6831-4BC6-9016-18645E8B749F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{DBACEFC5-0234-4317-B096-F212ECAE1DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBACEFC5-0234-4317-B096-F212ECAE1DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBACEFC5-0234-4317-B096-F212ECAE1DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C51B2B-6831-4BC6-9016-18645E8B749F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C51B2B-6831-4BC6-9016-18645E8B749F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C51B2B-6831-4BC6-9016-18645E8B749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C51B2B-6831-4BC6-9016-18645E8B749F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{12B6101D-6858-4993-955B-64099212E7FE} = {5CC1E935-DB4D-42FE-88DE-25898DAED069}
 		{DBACEFC5-0234-4317-B096-F212ECAE1DD1} = {A33473FC-8C2F-434A-BE06-4FE74080BC6D}
+		{86C51B2B-6831-4BC6-9016-18645E8B749F} = {24AEE8C0-38B2-40AD-80DB-F279EFD7CCD4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF8A7483-1929-46EB-8D5D-FB7F70129FC2}

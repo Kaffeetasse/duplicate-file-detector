@@ -42,7 +42,7 @@ namespace System.IO.Filesystem.Ntfs
     /// particularly when browsing really big directories.
     /// </summary>
     /// <remarks>Admnistrator rights are required in order to use this method.</remarks>
-    public partial class NtfsReader
+    public partial class NtfsReader : INtfsReader
     {
         /// <summary>
         /// NtfsReader constructor.

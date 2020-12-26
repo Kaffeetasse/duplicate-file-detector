@@ -53,6 +53,7 @@
     <Compile Include="System\IO\Filesystem\Ntfs\IDiskInfo.cs" />
     <Compile Include="System\IO\Filesystem\Ntfs\IFragment.cs" />
     <Compile Include="System\IO\Filesystem\Ntfs\INode.cs" />
+    <Compile Include="System\IO\Filesystem\Ntfs\INtfsReader.cs" />
     <Compile Include="System\IO\Filesystem\Ntfs\IStream.cs" />
     <Compile Include="System\IO\Filesystem\Ntfs\NtfsReader.cs" />
     <Compile Include="System\IO\Filesystem\Ntfs\NtfsReader.Algorithms.cs">
