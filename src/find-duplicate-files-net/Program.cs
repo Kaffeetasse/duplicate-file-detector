@@ -46,10 +46,22 @@ namespace find_duplicate_files_net
             StopWatch.Stop();
             var elapsedMs = StopWatch.ElapsedMilliseconds;
 
+            var totalDuplicates = 0;
+            ulong totalSize = 0;
+            foreach (var duplicate in duplicatesAfterChecksum)
+            {
+                var count = duplicate.Value.Count - 1;
+                var size = duplicate.Value.First().Size * Convert.ToUInt64(count);
+                totalDuplicates += count;
+                totalSize += size;
+            }
+
             Console.WriteLine("");
             if (opts.Read) Console.WriteLine("Read from save file");
-            Console.WriteLine("Total Time taken: {0} ms", elapsedMs);
-            Console.WriteLine("Total duplicate files: {0}", duplicatesAfterChecksum.Count);
+            Console.WriteLine("Time taken: {0} ms", elapsedMs);
+            Console.WriteLine("Duplicate files: {0}", duplicatesAfterChecksum.Count);
+            Console.WriteLine("Duplicates: {0}", totalDuplicates);
+            Console.WriteLine("Duplicates size: {0:F} mb", totalSize / Math.Pow(1000, 2));
 
             if (!opts.Save) return;
             CreateSaveFile(opts.SaveFile, duplicatesAfterChecksum);

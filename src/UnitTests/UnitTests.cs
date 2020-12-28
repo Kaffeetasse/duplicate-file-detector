@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.IO.Abstractions.TestingHelpers;
 using System.IO.Filesystem.Ntfs;
 using System.Linq;
@@ -41,7 +40,8 @@ namespace UnitTests
                     CreationTime = new DateTime(2020, 12, 26),
                     LastAccessTime = new DateTime(2020, 12, 26),
                     LastChangeTime = new DateTime(2020, 12, 26)
-                },new FakeNode
+                },
+                new FakeNode
                 {
                     Attributes = Attributes.Archive,
                     NodeIndex = 1,

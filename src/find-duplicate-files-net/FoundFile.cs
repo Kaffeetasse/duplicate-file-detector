@@ -4,5 +4,6 @@
     {
         public string FullName { get; set; }
         public string Checksum { get; set; }
+        public ulong Size { get; set; }
     }
 }

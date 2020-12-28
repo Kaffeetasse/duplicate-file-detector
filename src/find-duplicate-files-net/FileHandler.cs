@@ -12,9 +12,9 @@ namespace find_duplicate_files_net
 {
     public class FileHandler
     {
-        private readonly INtfsReader _ntfsReader;
-        private readonly IFileSystem _fileSystem;
         private readonly DriveInfoBase _driveInfo;
+        private readonly IFileSystem _fileSystem;
+        private readonly INtfsReader _ntfsReader;
 
         public FileHandler(INtfsReader ntfsReader, IFileSystem fileSystem, DriveInfoBase driveInfo)
         {
@@ -117,7 +117,8 @@ namespace find_duplicate_files_net
                     // does not exist
                     if (!fileDictionary.ContainsKey(fileKey))
                     {
-                        fileDictionary.Add(fileKey, new List<FoundFile> { new FoundFile { FullName = node.FullName } });
+                        fileDictionary.Add(fileKey,
+                            new List<FoundFile> { new FoundFile { FullName = node.FullName, Size = node.Size } });
                         continue;
                     }
 
